@@ -4,15 +4,26 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+CHS Robotics Club is the robotics club at Coronado High school participating in the First Robotics Competition.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Current officers are:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+|                            Name | Position       |
+|--------------------------------:|----------------|
+|      {{site.members.president}} | President      |
+| {{site.members.vice_president}} | Vice President |
+{% for officer in site.members.officers %}|{{officer}}|Officer|
+{% endfor %}{% for other in site.members.other %}|{{other}}|Other|
+{% endfor %}
 
+This site was made with [Jekyll]{:target="_blank"} using the [Minima]{:target="_blank"} theme.
 
-[jekyll-organization]: https://github.com/jekyll
+It uses [FontAwesome]{:target="_blank"} for the external link icons: <i class="fas fa-external-link-alt"></i>.
+
+This page is hosted with [GitHub pages]{:target="_blank"} and is [open source][GitHub Repo]{:target="_blank"}.
+
+[Jekyll]:https://jekyllrb.com/
+[Minima]:https://github.com/jekyll/minima
+[FontAwesome]:https://fontawesome.com/
+[GitHub pages]:https://pages.github.com/
+[GitHub Repo]:https://github.com/CHS-Robotics-Club/CHS-Robotics-Club.github.io

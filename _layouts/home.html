@@ -11,7 +11,7 @@ layout: default
 
   {{ content }}
 
-  <h1 class="page-heading">Pages</h1>
+  
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
@@ -20,6 +20,7 @@ layout: default
 
 
   {%- if posts.size > 0 -%}
+	<h1 class="page-heading">Pages</h1>
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
