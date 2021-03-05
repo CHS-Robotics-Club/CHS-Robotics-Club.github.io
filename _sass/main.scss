@@ -1,3 +1,25 @@
+@mixin relative-font-size($ratio) {
+  font-size: #{$ratio}rem;
+}
+
 .post-link {
 	cursor: pointer;
+}
+
+a[target="_blank"]::after {
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f35d";
+	
+	margin: 0 3px 0 5px;
+	transform: translateY(-50%);
+	
+	@include relative-font-size(.75);
+}
+
+h1 {
+	@include relative-font-size(2.625);
 }
